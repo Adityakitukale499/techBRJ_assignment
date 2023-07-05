@@ -6,8 +6,7 @@ class App extends Component {
     this.state = {
       questions: [],
       choices: [],
-      logo: null,
-      submit:false
+      logo: null
     }
   }
   componentDidMount() {
@@ -15,8 +14,7 @@ class App extends Component {
       questions: data.feedbackQuestions,
       logo: data.companyLogo,
       choices:data.choices,
-      choice: new Array(data.feedbackQuestions.length).fill(''),
-      submit:false
+      choice: new Array(data.feedbackQuestions.length).fill('')
     }))
   }
   handleChoiceChange =(index, value) =>{
@@ -29,12 +27,9 @@ class App extends Component {
     // console.log(value,index);
   }
   handleSubmit() {
-    this.setState = ({
-      submit:true
-    })
     const feedback = {
       questions: this.state.questions,
-      choice: this.state.choice
+      choices: this.state.choice
     }
     console.log(feedback);
   }
