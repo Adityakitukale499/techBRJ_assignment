@@ -1,0 +1,27 @@
+.container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    /* border: 1px solid black; */
+}
+.container > div{
+    border: 2px solid black;
+    padding: 2% 5%;
+    background-color: antiquewhite;
+    border-radius: 10px;
+}
+.logo{
+    width: 100%;
+    height: 150px;
+}
+.submitBtn{
+    width: 100%;
+    margin-top: 15px;
+}
+.qustions{
+    font-size: 20px;
+    font-weight: bolder;
+    margin-bottom: 5px;
+}
